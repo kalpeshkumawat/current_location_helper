@@ -1,21 +1,37 @@
+
 name: current_location_helper
 description: A Flutter utility for one-time and continuous device location with permission handling.
-version: 0.1.0
+version: 0.1.1
+
 homepage: https://github.com/kalpeshkumawat/current_location_helper
 repository: https://github.com/kalpeshkumawat/current_location_helper
 issue_tracker: https://github.com/kalpeshkumawat/current_location_helper/issues
+
 topics:
   - location
   - geolocation
   - gps
+
+screenshots:
+  - description: 'Location permission handling interface.'
+    path: screenshots/permission_required.jpg
+  - description: 'GPS settings prompt when location is disabled.'
+    path: screenshots/gps_settings_prompt.jpg
+  - description: 'One-time and continuous location tracking demo.'
+    path: screenshots/location_demo.jpg
+  - description: 'Live location with latitude, longitude and accuracy.'
+    path: screenshots/live_tracking.jpg
+
 environment:
   sdk: '>=3.3.0 <4.0.0'
   flutter: '>=3.19.0'
+
 dependencies:
   flutter:
     sdk: flutter
   geolocator: ^13.0.4
   permission_handler: ^11.4.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
